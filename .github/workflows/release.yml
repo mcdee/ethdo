@@ -114,7 +114,7 @@ jobs:
           asset_content_type: text/plain
 
   # Build and pack the X64 binaries for OSX.
-  build_macos:
+  build_macos_x64:
     runs-on: [ macos-latest, x64]
     needs: [create_release, env_vars]
     steps:
@@ -159,7 +159,7 @@ jobs:
           asset_content_type: text/plain
 
   # Build and pack the ARM64 binaries for OSX.
-  build_macos:
+  build_macos_amd64:
     runs-on: [ macos-latest, ARM64]
     needs: [create_release, env_vars]
     steps:
